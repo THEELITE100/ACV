@@ -1,4 +1,4 @@
-# NPR: Detail-Preserving Non-Photorealistic Rendering
+# NPR: Detail Preserving Non-Photorealistic Rendering
 
 ## 📖 About The Project
 

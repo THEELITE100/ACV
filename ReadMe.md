@@ -1,6 +1,6 @@
 # NPR: Detail Preserving Non-Photorealistic Rendering
 
-## 📖 About The Project
+## 📖 About the Project
 
 **NPR** is a high fidelity Non-Photorealistic Rendering (NPR) web application. This project operates within the specialized subfield of computer vision focused on programmatically transforming standard RGB photographs into stylized artworks specifically graphite pencil sketches and watercolor illustrations.
 

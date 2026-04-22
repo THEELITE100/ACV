@@ -18,9 +18,9 @@ Instead of relying on opaque, pre-packaged library functions (like basic OpenCV 
 
 ## 🛠️ Built With
 
-  * **Backend:** Python 3.x, Flask, Werkzeug
+  * **Backend:** Python, Flask, Werkzeug
   * **Computer Vision:** OpenCV (`cv2`), NumPy
-  * **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES6+), Fetch API
+  * **Frontend:** HTML, CSS, Vanilla JavaScript, Fetch API
 
 -----
 

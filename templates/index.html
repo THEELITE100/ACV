@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPR | Art Studio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="gradient-text">NPR Studio</h1>
+            <p>Transform your photos into algorithmic masterpieces.</p>
+        </header>
+        <main>
+            <div class="controls-card" id="controls-card">
+                <div class="upload-zone" id="drop-zone">
+                    <div id="upload-content">
+                        <p>Drag & Drop your image here<br>or <span class="highlight">Browse</span></p>
+                    </div>
+                    <img id="image-preview" src="" alt="Upload Preview" style="display: none;">
+                    <input type="file" id="file-input" accept="image/jpeg, image/png, image/webp" hidden>
+                </div>
+                <div class="style-selector">
+                    <label class="radio-card">
+                        <input type="radio" name="style" value="pencil" checked>
+                        <span class="card-content">✏️ Pencil Sketch</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="style" value="watercolor">
+                        <span class="card-content">🎨 Watercolor</span>
+                    </label>
+                </div>
+                <button id="generate-btn" disabled>Generate Art</button>
+            </div>
+            <div class="loading-state" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Applying computational magic...</p>
+            </div>
+            <div class="result-container" id="result-container" style="display: none;">
+                <div class="side-by-side">
+                    <div class="image-box">
+                        <h3>Original Photo</h3>
+                        <img id="img-before" src="" alt="Original Photo">
+                    </div>
+                    <div class="image-box">
+                        <h3>Synthetix Art</h3>
+                        <img id="img-after" src="" alt="Processed Art">
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <a id="download-btn" class="download-btn" href="" download="Synthetix_Art.jpg">Download Art</a>
+                    <button id="reset-btn" class="reset-btn">Transform Another Image</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

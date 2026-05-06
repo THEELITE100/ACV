@@ -64,7 +64,7 @@ Make sure you have Python 3.8+ installed on your system.
     cd ACV
     ```
 
-2.  **Create a virtual environment (Recommended):**
+2.  **Create a virtual environment:**
 
     ```bash
     python -m venv venv
